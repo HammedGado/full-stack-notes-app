@@ -1,10 +1,14 @@
 // server/index.js
-import { pool } from './db.js';
-import express from 'express';
-import cors from 'cors';
+import express from "express";
+import cors from "cors";
+import { pool } from "./db.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5050;
+
 
 
 // Middleware
